@@ -1,0 +1,77 @@
+/* 广叔封面文字样式 - 在这里调整所有视觉效果 */
+
+/* 容器样式，模拟封面背景 */
+.cover-container {
+    width: 720px; /* 模拟视频宽度 */
+    height: 960px; /* 模拟3:4比例的高度 */
+    background-image: url('bg.jpg'); /* 使用bg.jpg作为背景 */
+    background-size: cover; /* 确保图片铺满容器 */
+    background-position: center; /* 图片居中显示 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    position: relative;
+}
+
+/* 文字块的整体定位和样式 */
+.text-block {
+    width: 100%;
+    text-align: center; /* 文字水平居中 */
+}
+
+/* 所有文字行的通用样式 */
+.text-block p {
+    /* 字体名称，需要确保Python脚本能找到这个字体文件 */
+    font-family: "SimHei", "Microsoft YaHei", sans-serif; /* 黑体或微软雅黑，可以替换成你自己的字体名称 */
+    
+    /* 字号 */
+    font-size: 80px;
+    
+    /* 字体粗细 */
+    font-weight: bold;
+    
+    /* 颜色 */
+    color: white;
+    
+    /* 行高，调整多行文字之间的垂直间距 */
+    line-height: 1.3;
+
+    /* 关键：文字描边效果 */
+    /* 通过在文字周围添加4个方向的阴影来实现描边 */
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* 如果需要对特定行进行微调，可以在这里添加 */
+.text-block p.line1 {
+    /* 例如：第一行字号更大 */
+    /* font-size: 90px; */
+    color: #61dbe4;
+    font-size: 80px;
+    margin-top: -200px; 
+    font-family: "综艺体";
+}
+
+.text-block p.line2 {
+    /* color: #FFD700; */ /* 例如：第二行用金色 */
+     color: #ffde00;
+     font-size: 80px;
+     font-family: "MyCoolEnglishFont"
+}
+
+.text-block p.line3 {
+    /* font-style: italic; */ /* 例如：第三行用斜体 */
+     color: #000;
+     text-shadow: none;
+     width: 80%;
+     font-size: 48px;
+     padding: 20px;
+     margin: 40px auto;
+     background-color: rgb(255, 222, 0);
+}
